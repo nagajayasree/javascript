@@ -1,3 +1,6 @@
+//write a function which takes hours and minutes as parameters
+//and convert them to seconds.
+
 let output = convert(1,3);
 console.log(output);
 
