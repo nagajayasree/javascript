@@ -7,7 +7,7 @@ while(i <= numbers1.length){
         console.log(numbers1);
         console.log("duplicate number exists");
         numbers2.push(numbers1[i]);
-        console.log('duplicate number is at location:'+ numbers2[j]);
+        console.log('duplicate number is at location:'+ numbers1[i]);
         numbers1.splice(numbers1[i],1);
         console.log(numbers1);
     }
