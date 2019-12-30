@@ -4,6 +4,7 @@ let i = 0;
 let j = 0;
 while(i <= numbers1.length){
     if(numbers1.indexOf(i) != numbers1.lastIndexOf(i)){
+        console.log(numbers1);
         console.log("duplicate number exists");
         numbers2.push(numbers1[i]);
         console.log('duplicate number is at location:'+ numbers2[j]);
