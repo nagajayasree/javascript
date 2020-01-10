@@ -1,0 +1,46 @@
+body{
+    background-image: url('wrcr.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+}
+
+#header{
+    font-size: 30px;
+}
+
+h1{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+}
+
+button{
+    font-family: serif;
+    color: rgb(19, 15, 211);
+}
+
+#textbox1{
+    border: hidden;
+    color: black;
+    width: 200px;
+    height: 20px;
+}
+
+#textbox2{
+    border: hidden;
+    color: black;
+    width: 200px;
+    height: 20px;
+}
+#form1{
+    border-radius: 5cm;   
+}
+
+#enter{
+    border: mediumpurple;
+}
+
+#enter2{
+    border: mediumpurple;
+} 
