@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css"> 
+</head>
+<body>
+    <script>
+        function validate(){
+            let id = document.getElementById("txtbx1").value;
+            let pwd = document.getElementById("txtbx2").value;
+            if(id == pwd){
+                alert("Valid Id and Password");
+            }
+            else{
+                alert("Invalid Id and Password");
+            }
+        }
+    </script>
+    <div>
+        <h2>User Log-in</h2>
+        <input id = "txtbx1" placeholder="UserId" type = "text"><br>
+        <br>
+        <input id="txtbx2" placeholder="Password" type = "password"><br>
+        <br>
+        <button onclick="validate()">Submit</button>
+    </div>
+</body>
+</html>
+
+//css file
+div{
+    text-align: center;
+    padding: 0.5cm;
+    background-color: papayawhip;
+    background-attachment: fixed;
+}
+
+h2{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+button{
+    border: 5cm;
+    border-radius: 2pc;
+}
+
+#txtbx1{
+    border-radius: 1px;
+}
+
+#txtbx2{
+    border-radius: 1px;
+}
+
