@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body>
+    <script>
+        function rbtn(){
+            let rd1 = document.getElementById("rd1");
+            let rd2 = document.getElementById("rd2");
+            if(rd1.checked == true)
+                alert("The selected button is: "+rd1.value);
+            else if(rd2.checked == true)
+                alert("The selected button is: "+rd2.value);
+            else
+            alert("Nothing Selected");
+        }
+    </script>
+    <div>
+        <form>
+            Gender :
+            <input id = "rd1" name="grp1" type="radio" value="Male">Male
+            <input id= "rd2" name = "grp1" type="radio" value="Female">Female<br>
+            <br>
+            <button onclick = "rbtn()" id="btn1">Click</button>
+        </form>
+    </div>    
+</body>
+</html>
+
+//css
+div{
+    text-align: center;
+    padding: 2cm;
+}
