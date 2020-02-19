@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <script>
+        function selected(){
+            let select = document.getElementById("selectbox");
+            console.log(select);
+            alert(select.options[select.selectedIndex].value);
+        }
+    </script>
+    <div>
+        <select id="selectbox">
+            <option value="Telangana">Telangana</option>
+            <option value="AP">AP</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Tamilnadu">Tamilnadu</option>
+            <option value="Kerala">Kerala</option>
+        </select><br>
+        <br>
+        <button onclick="selected()">Click Here</button>
+    </div>
+</body>
+</html>
+
+//css
+div{
+    text-align: center;
+    padding: 2pc;
+}
