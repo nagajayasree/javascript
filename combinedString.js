@@ -4,11 +4,9 @@
 //if not return original string. 
 
 function combinedString(str){
-    let str1 = str.slice(0,3);
-    //console.log(str1);
-    let str2 = str.substring(str.length,str.length-3);
-    //console.log(str2);
-    let result = (str.length <= 3) ? str : `${str1}${str2}`;
+    let first3 = str.slice(0,3);
+    let last3 = str.substring(str.length,str.length-3);
+    let result = (str.length <= 3) ? str : `${first3}${last3}`;
     console.log(result);
 }
 
