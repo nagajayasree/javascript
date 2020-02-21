@@ -7,7 +7,7 @@ function addNew(string){
         return "Original String";
     }
     else{
-        let newString = "New!"+" "+`${string}`;
+        let newString = `New! ${string}`;
         return newString;
     }
 }
