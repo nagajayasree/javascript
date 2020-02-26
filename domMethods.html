@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Dom Manipulations</h1>
+        <p id = "p1">Click to manipulate</p>
+        <p id= "p2">Methods:getElementsById,getElementsByTag,getElementsByClass</p>
+        <p class="info">These are the methods used to manipulate the content on web page.</p>
+        <a class="info" href="#">Know more here</a><br>
+        <br>
+        <button onclick="manipulations()">Click Here</button>
+    </div>
+    <script type="text/javascript">
+        function manipulations(){
+            let header = document.getElementsByTagName("h1");
+            for(let i = 0;i < header.length;i++){
+                header[i].style.color = "blue";
+            }
+            let para = document.getElementById("p1").innerText = "Manipulated";
+            let about = document.getElementsByClassName("info");
+            for(let x = 0;x < about.length;x++){
+                about[x].style.fontStyle = "italic";
+            }
+            alert("manipulated successfully");
+        }
+    </script>
+</body>
+</html>
