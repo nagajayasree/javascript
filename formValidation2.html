@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Form Validations</title>
+</head>
+<body>
+    <form onsubmit="return validate()" action="message.html">
+        <input id="uname" placeholder="Username" type="text"/> 
+        <br><br>
+        <input id="pass" placeholder="Password" type="password"/><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function validate(){
+           let username = document.getElementById("uname");
+           let password = document.getElementById("pass");
+           if(username.value.trim() == ""){
+               alert("blank username");
+               username.style.border = "solid 3px red";
+               return false;
+           }else if(password.value.trim() == ""){
+               alert("blank password");
+               password.style.border = "solid 3px red"
+               return false;
+           }else if(password.value.trim().length < 5){
+               alert("password too short");
+               return false;
+           }
+           return true;
+        }
+    </script>
+</body>
+</html>
+
+
+//message.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validations</title>
+</head>
+<body>
+    <h1>Welcome</h1>
+</body>
+</html>
