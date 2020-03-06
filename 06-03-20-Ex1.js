@@ -1,3 +1,5 @@
+//program to display current day and time
+
 let date = new Date();
 //console.log(date);
 
