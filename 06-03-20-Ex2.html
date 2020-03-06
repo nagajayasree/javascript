@@ -1,3 +1,5 @@
+//program to print the contents of the current window.
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,13 +10,11 @@
 <body>
     <p>Hello</p>
     <button onclick="printContent()">Print</button>
-    <script src="printContents.js"></script>
-</body>
-</html>
-
-
-//printContents.js
-//program to print the contents of the current window.
-function printContent(){
+    <script>
+        function printContent(){
     window.print();
 }
+
+    </script>
+</body>
+</html>
