@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="ch1.css" rel="stylesheet">
+</head>
+<body>
+        <button id="btn" onclick="changeBackground()">
+        Click Me!
+        </button>
+    <script>
+        let button = document.getElementById("btn");
+        let body = document.querySelector("body");
+        let colors = ["red,"green","yellow","blue","purple","orange"];
+
+        body.style.backgroundColor = 'violet';
+        button.addEventListener("click",changeBackground)
+        function changeBackground(){
+            let colorIndex = parseInt(Math.random()*colors.length+1)
+            body.style.backgroundColor = colors[colorIndex];
+        }
+    </script>
+</body>
+</html>
+
+
+//ch1.css
+body{
+    text-align: center;
+    padding: 300px;;
+}
