@@ -14,12 +14,14 @@
         let button = document.getElementById("btn");
         let body = document.querySelector("body");
         let colors = ["red,"green","yellow","blue","purple","orange"];
-
+         
         body.style.backgroundColor = 'violet';
+        button.style.backgroundColor = 'violet';     
         button.addEventListener("click",changeBackground)
         function changeBackground(){
             let colorIndex = parseInt(Math.random()*colors.length+1)
             body.style.backgroundColor = colors[colorIndex];
+            button.style.backgroundColor = colors[colorIndex];
         }
     </script>
 </body>
