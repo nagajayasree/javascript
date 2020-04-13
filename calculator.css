@@ -1,0 +1,44 @@
+*, *::after,*::before{
+    box-sizing: border-box;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: cursive;
+}
+
+body{
+    background: linear-gradient(to right, rgb(57, 121, 194),rgb(190, 66, 170));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+#input{
+    font-size: 6mm;
+    position: relative;
+    width: 70mm;
+    height: 10mm;
+}
+
+.content .table{
+    /* padding: 5mm; */
+    /* padding-top: 4mm; */
+    position: relative;
+    box-sizing: content-box;
+    border: inset;
+    width: 200pt;
+    height: 40pt;
+}
+
+.btn{
+    font-size: 5mm;
+    width: 10mm;
+    height: 10mm;
+}
+
+.equalsbtn{
+    position: relative;
+    height: 10mm;
+    width: 10mm;
+}
